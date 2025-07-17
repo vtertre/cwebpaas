@@ -1,0 +1,18 @@
+{
+  "name": "cwebpaas",
+  "version": "0.0.0",
+  "private": true,
+  "description": "WebP compression service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build-image": "docker build --platform=\"linux/amd64\" -t cwebpaas ."
+  },
+  "dependencies": {
+    "cwebp": "^3.2.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
